@@ -1,0 +1,89 @@
+.footer {
+    margin-top: 80px;
+    border-top: 1px solid var(--color-line);
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+
+    .container {
+        padding: 0 132px;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+
+        .socialMedia {
+            padding: 48px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--color-line);
+
+            @media screen and (max-width: 768px) {
+                padding: 28px 32px;
+            }
+
+            .logoPrimary {
+                margin-right: 40px;
+            }
+
+            &Item {
+                margin: 0px 12px;
+            }
+
+            .label {
+                margin: 0 12px 0 0;
+                font-size: 16px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .boxLink {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding: 0;
+                align-items: flex-start;
+            }
+
+            .logoPrimary {
+                display: block;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            &Item {
+                color: var(--color-text-gray);
+                text-decoration: none;
+                margin: 0 28px;
+                font-size: 14px;
+
+                @media screen and (max-width: 768px) {
+                    border-bottom: 1px solid var(--color-line);
+                    width: 100%;
+                    margin: 0;
+                    padding: 28px 32px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .logoSecondary {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    padding: 28px 32px;
+                }
+            }
+        }
+    }
+}

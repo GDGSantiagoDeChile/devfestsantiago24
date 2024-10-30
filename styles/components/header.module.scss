@@ -1,0 +1,127 @@
+.banner {
+    background-color: #4285F4;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: bold;
+
+    .btnLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+
+        span {
+            margin-left: 4px;
+        }
+
+        @media screen and (max-width: 992px) {
+            font-size: 12px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.header {
+    margin-bottom: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 36px;
+
+    @media screen and (max-width: 992px) {
+        height: 64px;
+        padding: 0 24px;
+        margin-bottom: 32px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 60px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        @media screen and (max-width: 992px) {
+            width: 44px;
+        }
+    }
+
+    .menu {
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+
+            .listItem {
+                margin: 0 24px;
+
+                .linkItem {
+                    text-decoration: none;
+                    color: var(--color-text-gray);
+                }
+            }
+        }
+
+        &.menuMobile {
+            @media screen and (max-width: 992px) {
+                background-color: white;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 2;
+
+                .list {
+                    flex-direction: column;
+                    margin-top: 48px;
+
+                    .listItem {
+                        padding: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttonNav {
+        border: 1px solid #212121;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28px;
+        width: 28px;
+
+        @media screen and (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    .buttonClose {
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+
+        @media screen and (min-width: 992px) {
+            display: none;
+        }
+
+    }
+}

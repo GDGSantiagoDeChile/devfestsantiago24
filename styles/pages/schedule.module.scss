@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+    max-width: var(--max-width-content);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+
+    .title {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-size: 36px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .textMap{
+        margin-bottom: 40px;
+    }
+
+    .photoMap{
+        margin-bottom: 40px;
+        width: 80%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .tabs {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        user-select: none;
+
+        .tab {
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            padding-bottom: 8px;
+
+            &.active {
+                border-bottom: 4px solid #676c72;
+            }
+        }
+    }
+
+    .cardEvent {
+        border: 1px solid #E2E2E2;
+        border-radius: 12px;
+        padding: 16px;
+        width: 100%;
+        margin: 8px 0;
+        box-sizing: border-box;
+
+
+        .title {
+            width: 100%;
+            border-bottom: 3px solid #676c72;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .speaker {
+            display: flex;
+            margin: 20px 0;
+
+            .photo {
+                height: 70px;
+                width: 70px;
+            }
+
+            .name {
+                margin-left: 12px;
+                font-weight: bold;
+            }
+
+        }
+
+        .talkDescription {
+            margin: 12px 0;
+        }
+
+        .timetable {
+            font-size: 20px;
+        }
+
+        .photo {
+            border-radius: 100%;
+        }
+    }
+
+}

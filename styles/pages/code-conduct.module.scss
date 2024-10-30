@@ -1,0 +1,64 @@
+.container {
+    width: 100%;
+    max-width: var(--max-width-content);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+
+    .containerArticle {
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .sectionText {
+            width: 50%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .title {
+                text-align: left;
+                width: 100%;
+                margin-bottom: 60px;
+                font-weight: bold;
+                font-size: 36px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .paragraph {
+                margin-bottom: 24px;
+
+                .link {
+                    color: var(--color-dark);
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .sectionImg {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}

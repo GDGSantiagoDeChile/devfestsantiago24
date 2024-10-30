@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.devfest.pe
+
+# Sitemaps
+Sitemap: https://www.devfest.pe/sitemap.xml
