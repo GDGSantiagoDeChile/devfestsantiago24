@@ -1,4 +1,6 @@
-const sessions = [
+import { Session } from '../src/types/types';
+
+const sessions: Session[] = [
   {
     code: "Apertura",
     start: "9:00",

@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useState, FC } from 'react';
 import styles from '../styles/sessionCard.module.scss';
 import SessionDialog from './SessionDialog';
+import Image from 'next/image';
+import { Session } from '../src/types/types'; // Importar la interfaz desde types.ts
 
-const SessionCard = ({ session }) => {
+interface SessionCardProps {
+  session: Session;
+}
+
+const SessionCard: FC<SessionCardProps> = ({ session }) => {
   const [isDialogOpen, setDialogOpen] = useState(false);
 
   const handleCardClick = () => {
@@ -31,9 +37,11 @@ const SessionCard = ({ session }) => {
             {session.description && <p className={styles['session-description']}>{session.description}</p>}
           </div>
           <div className={styles['session-body']}>
-            <img
+            <Image
               src={`/assets/speakers/${session.photo || 'placeholder.webp'}`}
-              alt={session.speaker}
+              alt={session.speaker || 'Speaker'}
+              width={60}
+              height={60}
               className={styles['speaker-photo']}
             />
             <div className={styles['speaker-info']}>
