@@ -14,11 +14,13 @@ const SessionsPage = () => {
       <Header />
       <main>
         <h1 className={sessionCardStyles['sessions-title']}>Agenda</h1>
-        {sessions.map((session) => (
-          <div key={session.title} className={sessionCardStyles['session-card']}>
+        <div className={sessionCardStyles['sessions-container']}>
+          {sessions.map((session) => (
+            <div key={session.title} className={sessionCardStyles['session-card']}>
             <SessionCard session={session} />
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </main>
       <Footer />
     </>
