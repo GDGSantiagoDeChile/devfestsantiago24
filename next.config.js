@@ -20,10 +20,6 @@ const nextConfig = {
   ) {
     return {
       '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/code-conduct': { page: '/code-conduct' },
-      '/faq': { page: '/faq' },
-      '/schedule': { page: '/schedule' },
     };
   },
 };
