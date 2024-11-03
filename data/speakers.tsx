@@ -69,15 +69,15 @@ const speakers = [
     photo: "vladimir-draguicevic.jpeg",
     country: "Chile",
     bio: "Diseñador UX, programador especializado en accesibilidad digital.",
-    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/draguicevic/" }]
+    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/draguicevic/" }, { platform: "web", url: "https://erasmoh.dev" }]
   },
   {
-    name: "Erasmo Hernandez",
+    name: "Erasmo Hernández",
     title: "Líder Técnico para British Airways @ Globant",
     photo: "erasmo-hernandez.jpeg",
     country: "Chile",
     bio: "Tech Lead for British Airways @ Globant. Previously coded for United Airlines & Disney from Globant",
-    socialLinks: []
+    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/erasmohernandez/" }]
   },
   {
     name: "Joel Humberto Gomez Paredes",
