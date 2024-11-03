@@ -1,15 +1,21 @@
 import { useState } from 'react';
 import speakers from '../data/speakers';
 import styles from '../styles/speakerList.module.scss';
+import { Speaker } from '../src/types/types'; // Importa la interfaz Speaker
 
-const SpeakerDialog = ({ speaker, onClose }) => {
+interface SpeakerDialogProps {
+  speaker: Speaker;
+  onClose: () => void;
+}
+
+const SpeakerDialog: React.FC<SpeakerDialogProps> = ({ speaker, onClose }) => {
   if (!speaker) return null;
 
   return (
     <div className={styles.dialogOverlay} onClick={onClose}>
       <div className={styles.dialogContent} onClick={(e) => e.stopPropagation()}>
         <img
-          src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`} // Use placeholder if photo is missing
+          src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
           alt={speaker.name}
           className={styles.dialogImage}
         />
@@ -18,9 +24,13 @@ const SpeakerDialog = ({ speaker, onClose }) => {
         <p className={styles.dialogTitle}>{speaker.title}</p>
         <p className={styles.dialogBio}>{speaker.bio}</p>
         <div className={styles.socialLinks}>
-          {speaker.socialLinks.map((link) => (
+          {speaker.socialLinks?.map((link) => (
             <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.platform}>
-              <img src={`/assets/icons/${link.platform}.svg`} alt={`${link.platform} icon`} className={styles.socialIcon} />
+              <img
+                src={`/assets/icons/${link.platform}.svg`}
+                alt={`${link.platform} icon`}
+                className={styles.socialIcon}
+              />
             </a>
           ))}
         </div>
@@ -30,10 +40,10 @@ const SpeakerDialog = ({ speaker, onClose }) => {
   );
 };
 
-const SpeakerList = () => {
-  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+const SpeakerList: React.FC = () => {
+  const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
-  const handleCardClick = (speaker) => {
+  const handleCardClick = (speaker: Speaker) => {
     setSelectedSpeaker(speaker);
   };
 
@@ -48,7 +58,7 @@ const SpeakerList = () => {
         {speakers.map((speaker) => (
           <div key={speaker.name} className={styles.speakerCard} onClick={() => handleCardClick(speaker)}>
             <img
-              src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`} // Use placeholder if photo is missing
+              src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
               alt={speaker.name}
               className={styles.speakerImage}
             />
@@ -59,7 +69,7 @@ const SpeakerList = () => {
           </div>
         ))}
       </div>
-      <SpeakerDialog speaker={selectedSpeaker} onClose={closeDialog} />
+      {selectedSpeaker && <SpeakerDialog speaker={selectedSpeaker} onClose={closeDialog} />}
     </section>
   );
 };
