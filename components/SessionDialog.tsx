@@ -1,7 +1,8 @@
 import { FC } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/sessionDialog.module.scss';
 import Image from 'next/image';
-import { Session } from '../src/types/types'; // Importar la interfaz desde types.ts
+import { Session } from '../src/types/types';
 
 interface SessionDialogProps {
   session: Session;
@@ -10,6 +11,8 @@ interface SessionDialogProps {
 }
 
 const SessionDialog: FC<SessionDialogProps> = ({ session, isOpen, onClose }) => {
+  const { basePath } = useRouter(); // Obtén basePath
+
   if (!isOpen) return null;
 
   return (
@@ -21,7 +24,7 @@ const SessionDialog: FC<SessionDialogProps> = ({ session, isOpen, onClose }) => 
         </div>
         <div className={styles['dialog-right']}>
           <Image
-            src={`/assets/speakers/${session.photo || 'placeholder.webp'}`}
+            src={`${basePath}/assets/speakers/${session.photo || 'placeholder.webp'}`}
             alt={session.speaker || 'Speaker'}
             width={100}
             height={100}

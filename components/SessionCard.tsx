@@ -1,4 +1,5 @@
 import { useState, FC } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/sessionCard.module.scss';
 import SessionDialog from './SessionDialog';
 import Image from 'next/image';
@@ -10,6 +11,7 @@ interface SessionCardProps {
 
 const SessionCard: FC<SessionCardProps> = ({ session }) => {
   const [isDialogOpen, setDialogOpen] = useState(false);
+  const { basePath } = useRouter(); // Obtén basePath
 
   const handleCardClick = () => {
     setDialogOpen(true);
@@ -38,7 +40,7 @@ const SessionCard: FC<SessionCardProps> = ({ session }) => {
           </div>
           <div className={styles['session-body']}>
             <Image
-              src={`/assets/speakers/${session.photo || 'placeholder.webp'}`}
+              src={`${basePath}/assets/speakers/${session.photo || 'placeholder.webp'}`}
               alt={session.speaker || 'Speaker'}
               width={60}
               height={60}
