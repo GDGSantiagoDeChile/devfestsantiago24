@@ -1,13 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import getConfig from 'next/config';
-
-const { publicRuntimeConfig } = getConfig();
 
 export default function Document() {
-  const basePath = publicRuntimeConfig.basePath || '';
+  const basePath = '/devfestsantiago24'; // Coloca aquí el mismo valor de `basePath` en next.config.js
 
   return (
-    <Html lang='es'>
+    <Html lang="es">
       <Head>
         <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
