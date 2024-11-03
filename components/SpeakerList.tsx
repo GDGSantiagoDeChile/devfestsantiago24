@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import speakers from '../data/speakers';
 import styles from '../styles/speakerList.module.scss';
 import { Speaker } from '../src/types/types'; // Importa la interfaz Speaker
@@ -9,14 +11,18 @@ interface SpeakerDialogProps {
 }
 
 const SpeakerDialog: React.FC<SpeakerDialogProps> = ({ speaker, onClose }) => {
+  const { basePath } = useRouter(); // Obtén basePath
+
   if (!speaker) return null;
 
   return (
     <div className={styles.dialogOverlay} onClick={onClose}>
       <div className={styles.dialogContent} onClick={(e) => e.stopPropagation()}>
-        <img
-          src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
+        <Image
+          src={`${basePath}/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
           alt={speaker.name}
+          width={150}
+          height={150}
           className={styles.dialogImage}
         />
         <h3 className={styles.dialogName}>{speaker.name}</h3>
@@ -26,9 +32,11 @@ const SpeakerDialog: React.FC<SpeakerDialogProps> = ({ speaker, onClose }) => {
         <div className={styles.socialLinks}>
           {speaker.socialLinks?.map((link) => (
             <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.platform}>
-              <img
-                src={`/assets/icons/${link.platform}.svg`}
+              <Image
+                src={`${basePath}/assets/icons/${link.platform}.svg`}
                 alt={`${link.platform} icon`}
+                width={24}
+                height={24}
                 className={styles.socialIcon}
               />
             </a>
@@ -42,6 +50,7 @@ const SpeakerDialog: React.FC<SpeakerDialogProps> = ({ speaker, onClose }) => {
 
 const SpeakerList: React.FC = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
+  const { basePath } = useRouter(); // Obtén basePath
 
   const handleCardClick = (speaker: Speaker) => {
     setSelectedSpeaker(speaker);
@@ -57,9 +66,11 @@ const SpeakerList: React.FC = () => {
       <div className={styles.speakerGrid}>
         {speakers.map((speaker) => (
           <div key={speaker.name} className={styles.speakerCard} onClick={() => handleCardClick(speaker)}>
-            <img
-              src={`/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
+            <Image
+              src={`${basePath}/assets/speakers/${speaker.photo || 'placeholder.webp'}`}
               alt={speaker.name}
+              width={150}
+              height={150}
               className={styles.speakerImage}
             />
             <div className={styles.speakerInfo}>

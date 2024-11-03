@@ -1,7 +1,11 @@
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import footerData from '../data/footer';
 import styles from '../styles/footer.module.scss';
 
 const Footer = () => {
+  const { basePath } = useRouter(); // Obtén basePath
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerColumn}>
@@ -30,7 +34,13 @@ const Footer = () => {
         <div className={styles.socialLinks}>
           {footerData.contact.socialLinks.map((link) => (
             <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.icon}>
-              <img src={`/assets/icons/${link.icon}.svg`} alt={`${link.icon} icon`} className={styles.socialIcon} />
+              <Image
+                src={`${basePath}/assets/icons/${link.icon}.svg`} // Usa basePath para la ruta de iconos
+                alt={`${link.icon} icon`}
+                width={24}
+                height={24}
+                className={styles.socialIcon}
+              />
             </a>
           ))}
         </div>
