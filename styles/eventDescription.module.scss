@@ -1,0 +1,51 @@
+.event-description {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 100%;
+  /* Elimina la sombra aquí */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+.event-text {
+  max-width: 600px;
+}
+
+.event-text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.event-date {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.event-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.register-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff4b4b;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ff2a2a;
+  }
+}

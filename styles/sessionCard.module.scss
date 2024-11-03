@@ -1,0 +1,102 @@
+.session-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  .session-time-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 80px;
+    text-align: left;
+
+    .session-time {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .session-duration {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .session-chip {
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .talk {
+      background-color: #4caf50; // Verde para Charlas
+    }
+
+    .lighting {
+      background-color: #ff9800; // Naranja para Charlas Relámpago
+    }
+  }
+
+  .session-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .session-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .session-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+
+  .session-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .session-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .speaker-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .speaker-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speaker-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .speaker-title {
+    font-size: 0.9rem;
+    color: #777;
+  }
+}

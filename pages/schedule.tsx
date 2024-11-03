@@ -1,7 +1,7 @@
-import Footer from '@/components/footer.component';
+import Footer from '@/components/Footer';
 import Header from './../components/header.component';
 import styles from '@/styles/pages/schedule.module.scss';
-import HeadPage from '@/components/head.component';
+import HeadPage from '@/components/Header';
 import { useEffect, useState } from 'react';
 import { TrackOne, TrackTwo, TrackThree, TrackFour, TrackFive } from '@/data/dataTrack';
 

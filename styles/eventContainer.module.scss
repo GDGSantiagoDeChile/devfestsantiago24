@@ -1,0 +1,11 @@
+.event-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+    padding: 2rem;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    max-width: 100%;
+  }
+  

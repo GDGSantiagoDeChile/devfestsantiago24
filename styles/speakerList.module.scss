@@ -1,0 +1,133 @@
+.speakerList {
+  background-color: rgba(187, 222, 251, 1);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.speakerTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.speakerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.speakerCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.speakerImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.speakerInfo {
+  padding: 1rem;
+}
+
+.speakerName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.speakerRole {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Estilos para el diálogo modal */
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialogContent {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.dialogImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dialogName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dialogCountry {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.dialogTitle {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.dialogBio {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.closeButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+}

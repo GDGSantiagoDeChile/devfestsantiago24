@@ -1,0 +1,53 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerColumn {
+  flex: 1 1 200px;
+  margin: 1rem;
+}
+
+.footerColumn h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.footerColumn p, 
+.footerColumn a, 
+.footerColumn li {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footerColumn a {
+  text-decoration: none;
+}
+
+.footerColumn a:hover {
+  color: #ccc;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  fill: #fff; /* Forza el color blanco en los íconos SVG */
+}
+
+.footerBottom {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #fff;
+}

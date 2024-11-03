@@ -1,64 +1,44 @@
 .container {
-    width: 100%;
-    max-width: var(--max-width-content);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;  // Hacer que el contenedor ocupe al menos la altura de la ventana
+}
+
+.containerArticle {
+    flex: 1;  // Esto hace que el contenido ocupe todo el espacio disponible
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sectionText {
+    flex: 2;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.link {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.sectionImg {
+    flex: 1;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    @media screen and (max-width: 768px) {
-        max-width: 100%;
-        padding: 0 32px;
-    }
-
-    .containerArticle {
-        display: flex;
-
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-        }
-
-        .sectionText {
-            width: 50%;
-
-            @media screen and (max-width: 768px) {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            .title {
-                text-align: left;
-                width: 100%;
-                margin-bottom: 60px;
-                font-weight: bold;
-                font-size: 36px;
-
-                @media screen and (max-width: 768px) {
-                    font-size: 24px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .paragraph {
-                margin-bottom: 24px;
-
-                .link {
-                    color: var(--color-dark);
-                    font-weight: bold;
-                }
-            }
-        }
-
-        .sectionImg {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @media screen and (max-width: 768px) {
-                width: 100%;
-            }
-        }
-    }
+    justify-content: center;
 }

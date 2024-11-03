@@ -3,9 +3,9 @@ import Image from "next/image";
 import About1 from './../assets/images/about-1.png';
 import About2 from './../assets/images/about-2.png';
 import About3 from './../assets/images/about-3.png';
-import Footer from '@/components/footer.component';
+import Footer from '@/components/Footer';
 import Header from '@/components/header.component';
-import HeadPage from '@/components/head.component';
+import HeadPage from '@/components/Header';
 import { useEffect } from 'react';
 
 export default function About() {

@@ -1,7 +1,7 @@
-import Footer from '@/components/footer.component';
+import Footer from '@/components/Footer';
 import styles from '@/styles/pages/faq.module.scss';
 import Header from '@/components/header.component';
-import HeadPage from '@/components/head.component';
+import HeadPage from '@/components/Header';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { dataQuestion } from '@/data/dataQuestion';

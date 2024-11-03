@@ -1,54 +1,21 @@
-:root {
-  // Colors
-  --color-blue: #4285f4;
-  --color-green: #0f9d58;
-  --color-red: #ea4335;
-  --color-yellow: #fbbc04;
-  --color-line: #DADCE0;
-  --color-text-gray: #5F6368;
-  --color-scrollbar-background: #f3f2f7;
-  --color-dark: #202124;
-
-  // Variables
-  --max-width-content: 1200px
-}
-
-// Fonts
-@font-face {
-  font-family: 'Google Sans';
-  src: url('./../assets/fonts/GoogleSans-Regular.ttf') format('truetype');
-  color: var(--color-dark);
-  font-display: swap;
-}
-
 * {
   margin: 0;
-  font-family: 'Google Sans';
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-// Custom scrollbar
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-::-webkit-scrollbar,
-::-webkit-scrollbar-track {
-  background: var(--color-green);
+main {
+  padding-top: 70px; /* Ajuste para la cabecera fija */
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-green);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar,
-::-webkit-scrollbar-track {
-  background: var(--color-scrollbar-background);
-}
-
-.noScroll {
-  overflow: hidden;
+a {
+  text-decoration: none;
+  color: inherit;
 }

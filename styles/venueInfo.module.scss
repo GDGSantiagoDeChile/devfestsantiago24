@@ -1,0 +1,44 @@
+.venueSection {
+  background-color: rgba(204, 246, 197, 1);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.venueTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.venueRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+  max-width: 800px; /* Limita el ancho máximo de cada fila */
+}
+
+.address,
+.directions {
+  font-size: 1.1rem;
+  color: #666;
+  flex: 1;
+  margin: 0; /* Asegura que no haya márgenes adicionales */
+  padding: 0; /* Asegura que no haya padding adicional */
+  text-align: left; /* Alineación a la izquierda para mejor legibilidad */
+}
+
+.placeImage,
+.mapImage {
+  width: calc(48% * 1.7); /* Tamaño aumentado */
+  max-width: 510px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Asegura que no haya márgenes adicionales en las imágenes */
+}
