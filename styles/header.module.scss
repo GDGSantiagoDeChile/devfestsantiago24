@@ -1,43 +1,90 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #ffffff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
+  }
+
+  .nav {
+    display: flex; // Mostrar en fila por defecto
+    gap: 1rem;
+
+    a {
       color: #ffffff;
-    }
-  
-    .nav {
-      display: flex;
-      gap: 1rem;
-      
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        &:hover {
-          color: #bbb;
-        }
-      }
-    }
-  
-    .register-button {
-      background-color: #ff4b4b;
-      color: #ffffff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
       text-decoration: none;
+
       &:hover {
-        background-color: #ff2a2a;
+        color: #bbb;
       }
     }
   }
-  
+
+  .register-button {
+    background-color: #ff4b4b;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #ff2a2a;
+    }
+  }
+
+  // Estilos para el botón hamburguesa
+  .burger {
+    display: none; // Ocultar en desktop
+    font-size: 30px; // Tamaño del icono
+    background: none; // Sin fondo
+    border: none; // Sin borde
+    color: #ffffff; // Color del icono
+    cursor: pointer; // Cambiar cursor al pasar
+
+    &:focus {
+      outline: none; // Sin contorno al hacer foco
+    }
+  }
+
+  @media (max-width: 768px) {
+      .burger {
+          display: block; // Mostrar botón hamburguesa en mobile
+          margin-left: 1rem;
+      }
+
+      .nav {
+          display: none; // Ocultar nav por defecto en mobile
+          flex-direction: column; // Cambiar a columna en mobile
+          position: absolute; // Posicionamiento absoluto
+          // top: 60px; // Ajustar según la altura del header
+          top: 110px;
+          left: 0;
+          width: 100%; // Ancho completo
+          background-color: #1a1a1a; // Fondo del menú
+          z-index: 1000; // Asegurar que esté encima de otros elementos
+
+          a {
+              padding: 1rem; // Espaciado interno para los enlaces
+              border-bottom: 1px solid #333; // Separación entre enlaces
+
+              &:last-child {
+                  border-bottom: none; // Quitar borde del último enlace
+              }
+          }
+      }
+
+      .nav.open {
+          display: flex; // Mostrar nav cuando está abierto
+      }
+  }
+}
