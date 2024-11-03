@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  basePath: '/devfestsantiago24',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -20,6 +21,9 @@ const nextConfig = {
   ) {
     return {
       '/': { page: '/' },
+      '/codigo-conducta': { page: '/codigo-conducta' },
+      '/voluntarios': { page: '/voluntarios' },
+      // Añade otras páginas aquí según tu estructura de rutas
     };
   },
 };
