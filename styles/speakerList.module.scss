@@ -83,8 +83,9 @@
 }
 
 .dialogImage {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -110,6 +111,11 @@
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 }
 
 .socialLinks {
