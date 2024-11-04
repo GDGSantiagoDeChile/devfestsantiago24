@@ -69,7 +69,7 @@ const speakers = [
     photo: "vladimir-draguicevic.jpeg",
     country: "Chile",
     bio: "Diseñador UX, programador especializado en accesibilidad digital.",
-    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/draguicevic/" }, { platform: "web", url: "https://erasmoh.dev" }]
+    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/draguicevic/" }]
   },
   {
     name: "Erasmo Hernández",
@@ -77,7 +77,7 @@ const speakers = [
     photo: "erasmo-hernandez.jpeg",
     country: "Chile",
     bio: "Tech Lead for British Airways @ Globant. Previously coded for United Airlines & Disney from Globant",
-    socialLinks: [{ platform: "linkedin", url: "https://linkedin.com/in/erasmohernandez/" }]
+    socialLinks: [{ platform: "github", url: "https://github.com/erasmoh" }, { platform: "instagram", url: "https://instagram.com/erasmohernandez" }, { platform: "linkedin", url: "https://linkedin.com/in/erasmohernandez/" }, { platform: "twitter", url: "https://twitter.com/erasmohernandez" }, { platform: "web", url: "https://erasmoh.dev" }]
   },
   {
     name: "Joel Humberto Gomez Paredes",
