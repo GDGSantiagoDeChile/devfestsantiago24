@@ -1,20 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.devfest.pe</loc>
+        <loc>https://gdgsantiagodechile.github.io/devfestsantiago24/</loc>
     </url>
     <url>
-        <loc>https://www.devfest.pe/about/</loc>
+        <loc>https://gdgsantiagodechile.github.io/devfestsantiago24/speakers/</loc>
     </url>
     <url>
-        <loc>https://www.devfest.pe/schedule/</loc>
+        <loc>https://gdgsantiagodechile.github.io/devfestsantiago24/sessions/</loc>
     </url>
     <url>
-        <loc>https://www.devfest.pe/code-conduct/</loc>
-    </url>
-    <url>
-        <loc>https://www.devfest.pe/faq/</loc>
-    </url>
-    <url>
-        <loc>https://www.devfest.pe/privacy/</loc>
+        <loc>https://gdgsantiagodechile.github.io/devfestsantiago24/location/</loc>
     </url>
 </urlset>
