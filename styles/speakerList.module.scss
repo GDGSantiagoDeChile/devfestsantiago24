@@ -121,6 +121,11 @@
 .socialIcon {
   width: 24px;
   height: 24px;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .closeButton {
