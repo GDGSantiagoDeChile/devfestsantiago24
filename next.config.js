@@ -23,6 +23,9 @@ const nextConfig = {
       '/': { page: '/' },
       '/codigo-conducta': { page: '/codigo-conducta' },
       '/voluntarios': { page: '/voluntarios' },
+      '/speakers':{ page: '/speakers'},
+      '/sessions':{ page: '/sessions'},
+      '/location':{ page: '/location'},
       // Añade otras páginas aquí según tu estructura de rutas
     };
   },
