@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Link from 'next/link';
 import footerData from '../data/footer';
 import styles from '../styles/footer.module.scss';
 
@@ -50,8 +51,8 @@ const Footer = () => {
         <h3>DevFest Santiago</h3>
         <ul>
           {footerData.devFest.map((item) => (
-            <li key={item.name}>
-              <a href={item.path}>{item.name}</a>
+            <li key={item.name}>              
+              <Link href={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>

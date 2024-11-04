@@ -1,9 +1,16 @@
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import Script from 'next/script';
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
+  {/* Meta tags y título global */}
+  <Head>
+    <title>DevFest Santiago 2024</title>
+    <meta name="description" content="Bienvenidos a DevFest Santiago 2024, el evento de tecnología más esperado." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </Head>
     {/* Global site tag - Google Tag Manager */}
     <Script id="google-analytics" strategy="afterInteractive">
       {`
