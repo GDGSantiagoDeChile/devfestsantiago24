@@ -41,7 +41,7 @@
 .socialIcon {
   width: 24px;
   height: 24px;
-  fill: #fff; /* Forza el color blanco en los íconos SVG */
+  filter: invert(100%) brightness(200%);
 }
 
 .footerBottom {
