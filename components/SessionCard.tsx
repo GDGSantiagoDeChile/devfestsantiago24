@@ -29,7 +29,7 @@ const SessionCard: FC<SessionCardProps> = ({ session }) => {
           {session.duration && <p className={styles['session-duration']}>{session.duration}</p>}
           {session.presentationType && (
             <span className={`${styles['session-chip']} ${styles[session.presentationType]}`}>
-              {session.presentationType === 'talk' ? 'Charla' : 'Charla Relámpago'}
+              {session.presentationType === 'talk' ? 'Charla' : session.presentationType === 'lighting' ? 'Charla Relámpago' : 'Workshop'}
             </span>
           )}
         </div>

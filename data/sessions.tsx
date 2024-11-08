@@ -126,7 +126,7 @@ const sessions: Session[] = [
     duration: "10 min",
     speaker: "Erasmo Hernandez",
     photo: "erasmo-hernandez.jpeg",
-    title: "Is never too late to start learning something new",
+    title: "It's never too late to start learning something new",
     description: "Cómo cambiar de carrera y construir una carrera sin importar la ubicación o situación...",
     speakerTitle: "Líder Técnico para British Airways @ Globant",
     presentationType: "lighting"
@@ -160,11 +160,11 @@ const sessions: Session[] = [
     start: "15:40",
     end: "16:10",
     duration: "30 min",
-    speaker: "Lesly Zerna (GDE)",
-    photo: "lesly-zerna.jpg",
-    title: "De escribir prompts a prototipar apps: Gemini API y Vertex AI",
-    description: "Explora la multimodalidad para crear prototipos de aplicaciones GenAI...",
-    speakerTitle: "GDE Machine Learning y Curriculum Developer en DeepLearning.AI",
+    speaker: "Joel Humberto Gomez Paredes (GDE)",
+    photo: "joel-gomez.jpg",
+    title: "Navegación instantánea en la web usando Speculation API",
+    description: "Analizaremos la implementación de Speculation API para mejorar la carga de una web...",
+    speakerTitle: "GDE Web Technologies y Google Maps Platform. Frontend Developer en Platzi",
     presentationType: "talk"
   },
   {
@@ -172,11 +172,11 @@ const sessions: Session[] = [
     start: "16:15",
     end: "16:45",
     duration: "30 min",
-    speaker: "Joel Humberto Gomez Paredes (GDE)",
-    photo: "joel-gomez.jpg",
-    title: "Navegación instantánea en la web usando Speculation API",
-    description: "Analizaremos la implementación de Speculation API para mejorar la carga de una web...",
-    speakerTitle: "GDE Web Technologies y Google Maps Platform. Frontend Developer en Platzi",
+    speaker: "Lesly Zerna (GDE)",
+    photo: "lesly-zerna.jpg",
+    title: "De escribir prompts a prototipar apps: Gemini API y Vertex AI",
+    description: "Explora la multimodalidad para crear prototipos de aplicaciones GenAI...",
+    speakerTitle: "GDE Machine Learning y Curriculum Developer en DeepLearning.AI",
     presentationType: "talk"
   },
   {
