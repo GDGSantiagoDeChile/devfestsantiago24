@@ -4,7 +4,7 @@ const speakers = [
     title: "Ingeniero de software",
     photo: "gabriel-romero.png",
     country: "Chile",
-    bio: "Soy Gabriel Romero, ingeniero de software y emprendedor apasionado por la Inteligencia Artificial y su aplicación en el mundo creativo y editorial. Con más de 20 años de experiencia en desarrollo de tecnologías emergentes, me he enfocado en hacer accesible la IA a través de proyectos innovadores como PublikAI, una editorial que combina tecnología de vanguardia con la creatividad para transformar cómo se crean y consumen contenidos. Mi objetivo es inspirar a otros a explorar las infinitas posibilidades que ofrece la IA para revolucionar industrias y generar impacto positivo.",
+    bio: "Soy Gabriel Romero, ingeniero de software y emprendedor apasionado por la Inteligencia Artificial y su aplicación en el mundo creativo y editorial. Con más de 20 años de experiencia en desarrollo de tecnologías emergentes, me he enfocado en hacer accesible la IA a través de proyectos innovadores como Editoriales Inteligentes, una editorial que combina tecnología de vanguardia con la creatividad para transformar cómo se crean y consumen contenidos. Mi objetivo es inspirar a otros a explorar las infinitas posibilidades que ofrece la IA para revolucionar industrias y generar impacto positivo.",
     socialLinks: [{ platform: "instagram", url: "https://instagram.com/usuario" }]
   },
   {
