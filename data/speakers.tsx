@@ -73,10 +73,10 @@ const speakers = [
   },
   {
     name: "Erasmo Hernández",
-    title: "Líder Técnico para British Airways @ Globant",
+    title: "Senior Frontend Developer & Tech Lead @ Globant",
     photo: "erasmo-hernandez.jpeg",
     country: "Chile",
-    bio: "Tech Lead for British Airways @ Globant. Previously coded for United Airlines & Disney from Globant",
+    bio: "Senior Frontend Developer & Tech Lead @ Globant. Previously coded for United Airlines & Disney from Globant",
     socialLinks: [{ platform: "github", url: "https://github.com/erasmoh" }, { platform: "instagram", url: "https://instagram.com/erasmohernandez" }, { platform: "linkedin", url: "https://linkedin.com/in/erasmohernandez/" }, { platform: "twitter", url: "https://twitter.com/erasmohernandez" }, { platform: "web", url: "https://erasmoh.dev" }]
   },
   {
